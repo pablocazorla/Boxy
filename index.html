@@ -1,0 +1,34 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Boxy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <style>
+    body{
+      background-color: #EEE;
+
+    }
+    canvas{
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    }
+  </style>
+</head>
+<body>
+  <canvas id="box-model" title="Box Model" width="800" height="600"></canvas>
+  
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/boxy.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      Box('box-model')
+      .size()
+      .render();
+    });
+  </script>
+</body>
+</html>
