@@ -26,7 +26,11 @@
   <script type="text/javascript">
     $(document).ready(function(){
       Box('box-model')
-      .size()
+      .size({
+        width:35,
+        height:65,
+        depth:32
+      })
       .render();
     });
   </script>
